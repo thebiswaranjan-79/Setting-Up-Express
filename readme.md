@@ -1,4 +1,1 @@
-### To use this Folder Structure 
-
--> Use npm init -y
--> npm start 
+### This is a Folder Structure for the Company Level Work
