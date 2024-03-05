@@ -1,10 +1,6 @@
  const express = require('express');
- const dotenv = require('dotenv');
-
- dotenv.config();
  const app =  express();
- 
- const PORT = process.env.PORT;
+ const {PORT} = require('./config/server.config');
 
 //  const email = 'abc@gmail.com';
 //  const password = 12345;
@@ -13,7 +9,7 @@
 
  
  app.listen(PORT, () => {
-    console.log(`Started Server at Port ${PORT}`)
+    console.log(`Started Server at Port ${PORT}`); //, Email = ${EMAIL}
  });
 
  // Instead of nodemon we can use the below command 
