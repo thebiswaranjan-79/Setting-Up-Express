@@ -1,9 +1,10 @@
 const express = require('express');
-const homePingController = require('./controllers/home.controller');
+const homePingController = require('../controllers/home.controller');
 
-const router = express.router();
+const router = express.Router(); // express router object
 
-app.get('/home', homePingController);// Routes 
-app.get('/homecoming', homePingController);// Routes 
+router.get('/home', homePingController);  // localhost:3000/api/home
+
+router.get('/homecoming', homePingController);
 
 module.exports = router;
